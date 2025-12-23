@@ -1,0 +1,114 @@
+body {
+    background: linear-gradient(135deg, #2b32b2 0%, #1488cc 100%);
+    min-height: 100vh;
+    padding: 40px 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+h1 {
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container {
+    max-width: 900px;
+}
+
+/* Card-like effect for tables */
+table {
+    border: none !important;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background: #fff;
+    width: 100%;
+}
+
+/* Question numbering column */
+td[rowspan="3"] {
+    background: #2b32b2;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    width: 60px;
+    border: none;
+}
+
+.task {
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    border: none;
+    background: #f8f9fa;
+}
+
+.variant {
+    background: #fff;
+    padding: 15px;
+    color: #555;
+    border: 1px solid #eee;
+    transition: background 0.2s;
+}
+
+.variant:hover {
+    background: #eef2ff;
+    color: #2b32b2;
+    font-weight: 500;
+}
+
+.form-control {
+    border-radius: 20px;
+    border: 2px solid #e0e0e0;
+    padding: 10px 20px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #2b32b2;
+}
+
+.btn-dark {
+    background: #1a1a1a;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    margin: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-dark:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+#score {
+    font-weight: bold;
+    color: #fff;
+    background: #2ecc71;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.col.bg-white {
+    background: transparent !important; /* Override bootstrap bg-white */
+}
+
+/* Developer signature */
+p {
+    color: rgba(255,255,255,0.7);
+    margin-top: 30px;
+    font-style: italic;
+}

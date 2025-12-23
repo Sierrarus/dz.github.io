@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  color: #333;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-weight: 300;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+table:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+td {
+  padding: 20px;
+  border: none;
+}
+
+/* Question Header */
+td[rowspan="3"] {
+  background: #3498db;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  width: 50px;
+  vertical-align: middle;
+}
+
+/* Task Text */
+.task {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #34495e;
+  background: #ecf0f1;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Variants row */
+tr:nth-child(2) td {
+  background: #fff;
+  color: #555;
+  font-size: 0.95em;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.variant {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.variant:hover {
+  color: #3498db;
+  font-weight: 500;
+}
+
+/* Input row */
+tr:nth-child(3) td {
+  background: #fafafa;
+  text-align: right;
+}
+
+input.answer {
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+  outline: none;
+  transition: border-color 0.3s;
+  width: 100%;
+  max-width: 200px;
+}
+
+input.answer:focus {
+  border-color: #3498db;
+}
+
+button {
+  display: block;
+  margin: 40px auto;
+  padding: 12px 40px;
+  background: #27ae60;
+  color: #fff;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4);
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #2ecc71;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#score {
+  font-weight: bold;
+  color: #27ae60;
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+div {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
